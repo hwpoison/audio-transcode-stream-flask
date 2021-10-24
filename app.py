@@ -44,7 +44,6 @@ codec_sessions = {}
 @app.route('/tstream.mp3')
 def tstream():
     url = request.args.get('stream_url')
-    init = True
     def get_chunk(url):
         while True:
             buffer = codec_sessions[url].stdout.read(1000) # read 1kb at a time (aprox 5s)
