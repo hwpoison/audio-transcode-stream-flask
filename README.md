@@ -13,3 +13,5 @@ requires:
 -flask
 -requests
 
+
+reason: zararadio is an old software that does not support the reproduction of internet radios with modern stream formats. this serves as a temporary solution.
